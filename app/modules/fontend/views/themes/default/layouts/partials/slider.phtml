@@ -1,0 +1,17 @@
+<div id="slider">
+    <div id="slider_bg">
+        <ul class="bxslider">
+            <?php foreach($slider as $k=>$v): ?>
+                <li class="bxslider-inner" ><img width="100%" src="<?php echo $v->url ?>"  /></li>
+            <?php endforeach;?>
+        </ul>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+            pager: false,
+            auto: true,
+        });
+    });
+</script>
